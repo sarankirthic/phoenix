@@ -5,6 +5,10 @@ const PORT = 3000;
 
 app.use(express.json());
 
+process.on('unhandledRejection', (reason) => {
+    console.error('Unhandled Rejection:', reason);
+});
+
 // Helper function to generate a random codename
 const generateCodename = () => {
     const adjectives = ["Nightingale", "Kraken", "Phoenix", "Valkyrie", "Shadow"];

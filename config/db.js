@@ -1,15 +1,17 @@
 const { Sequelize } = require("sequelize");
 const sequelize = new Sequelize({
     dialect: "postgres",
-    username: "postgres1",
-    password: "FaYh1ddzxj5lqV8ZjKQ7B3M2o45aJP7q",
-    host: "dpg-cudkf4l2ng1s73eiisug-a.oregon-postgres.render.com",
+    username: "saran",
+    password: "EA55Vrq2FfjTmyUhuNzhUQmXewNRMMsL",
+    host: "dpg-cudmph52ng1s73ejm0sg-a.oregon-postgres.render.com",
     port: "5432",
-    database: "postgres1_qfaz",
+    database: "postgres1_idfa",
     dialectOptions: {
         ssl: true,
     }
 });
+
+//postgresql://saran:EA55Vrq2FfjTmyUhuNzhUQmXewNRMMsL@dpg-cudmph52ng1s73ejm0sg-a.oregon-postgres.render.com/postgres1_idfa
 
 sequelize
     .authenticate()
